@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "TimeUp",
+  "description": "This extension alerts if Facebook is open for more than an hour and closes the tab.",
+  "version": "1.0",
+
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "background": {
+  	"scripts": ["socialchecker.js"]
+  },
+  "browser_action": {
+    "default_icon": "stopicon.png",
+    "default_popup": "timepop.html"
+  }
+}

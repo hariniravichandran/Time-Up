@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Select Social Network and Time Limit</title>
+    <style>
+        body {
+        	background: #fff;
+    		background: -webkit-linear-gradient(#fff, #999);
+    		font-family: Arial, Helvetica, sans-serif;
+    		font-weight: bold;
+        }
+        .title {
+            font-weight: bold;
+            position: relative;
+            width:100%;
+            text-align: center;
+        }   
+        .submitbtn {
+        	position: relative;
+            text-align: center;
+        	-webkit-transition: all 0.3s;
+        }
+        .submitbtn:hover {
+        	opacity: 0.75;
+        }
+
+        .timeUpInput {
+            margin: 10px 0;
+        }
+
+        .timeUpInput button {
+            width: 72px;
+            position: relative;
+            margin-left: 36px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="TimeUp">
+    	<datalist id = "socialsites" onclick="function(e){e.preventDefault();}">
+    		<option value = "Facebook">
+    		<option value = "Quora">
+    		<option value = "Reddit">
+    		<option value = "Instagram">
+    		<option value = "Twitter">
+    	</datalist>
+    	<div class="title"> Time up!</div>
+    	<div class="timeUpInput">
+            <input type = "text" name = "siteSelector" id = "siteSelector" placeholder="Enter site url">
+        </div>
+        <div class="timeUpInput">
+    	   <input type = "number" name = "timelimit" id = "timeLimit" placeholder = "Max time (mins)">
+        </div>
+        <div class="timeUpInput">
+        	<button type = "submit"  id="submitButton">Done</button>
+        </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="popup.js"></script>
+</html>
